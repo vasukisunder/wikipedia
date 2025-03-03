@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab: Real-Time Data</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>lab: real-time data</h1>
+            <p>a real-time view of Wikipedia edits</p>
+        </header>
+        
+        <main>
+            <div class="controls">
+                <button id="start">start stream</button>
+                <button id="stop" disabled>stop stream</button>
+                <span id="status">disconnected</span>
+            </div>
+            
+            <section class="updates">
+                <h1>recent updates <span id="update-count">(0)</span></h1>
+
+                <div id="updates-list" class="updates-list">
+
+
+                    <div class="placeholder-message">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+       
+    </div>
+
+    <!-- add Javascript here -->
+    <script src="script.js"></script>
+
+</body>
+</html> 
