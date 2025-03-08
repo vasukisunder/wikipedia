@@ -99,6 +99,64 @@ button:disabled {
     color: #2980b9;
 }
 
+.edit-details, .edit-stats, .edit-summary {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.edit-summary {
+    font-style: italic;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.edit-type {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.positive-change {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.negative-change {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.no-change {
+    color: #9e9e9e;
+}
+
+.view-changes {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #0366d6;
+}
+
+.view-changes:hover {
+    text-decoration: underline;
+}
+
+.topic-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.topic-science { background-color: #bbdefb; color: #0d47a1; }
+.topic-tech { background-color: #c8e6c9; color: #1b5e20; }
+.topic-entertainment { background-color: #f8bbd0; color: #880e4f; }
+.topic-sports { background-color: #ffecb3; color: #ff6f00; }
+.topic-politics { background-color: #e1bee7; color: #4a148c; }
+.topic-other { background-color: #eeeeee; color: #424242; }
+
 .placeholder-message {
     text-align: center;
     padding: 20px;
@@ -116,3 +174,50 @@ button:disabled {
     animation: fadeIn 0.5s ease-out;
 }
 
+/* Diff preview styles */
+.diff-preview {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    border: 1px solid #eaecf0;
+    font-family: monospace;
+    font-size: 12px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.diff-preview.visible {
+    display: block;
+}
+
+.diff-added {
+    background-color: #e6ffed;
+    color: #22863a;
+}
+
+.diff-removed {
+    background-color: #ffeef0;
+    color: #cb2431;
+}
+
+.toggle-diff {
+    background: none;
+    color: #0366d6;
+    border: none;
+    font-size: 12px;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle-diff:hover {
+    background: none;
+    color: #045cc7;
+}
+
+.loading {
+    font-style: italic;
+    color: #777;
+}
